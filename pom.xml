@@ -6,7 +6,7 @@
 
   <groupId>com.idream.webapp</groupId>
   <artifactId>idream-it-solutions</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
   <name>idream-it-solutions</name>
@@ -28,6 +28,19 @@
   </dependency>
   </dependencies>
 
+<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>test</name>
+			<url>http://13.234.77.246:8081/repository/test/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>testrepo</name>
+			<url>http://13.234.77.246:8081/repository/test/</url>
+		</snapshotRepository>
+	</distributionManagement>
+  
   <build>
     <finalName>idream-it-solutions</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
